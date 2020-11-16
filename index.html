@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafios Javascript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="bloco">
+            <div id="titulo">Calcular Média Final do Aluno </div>
+            <table>
+               <tr>
+                   <th>Nome</th>
+                   <td><input type="text" placeholder="Nome do Aluno" id="nome"></td>
+               </tr>
+               <tr>  
+                   <th>Nota 01</th>
+                   <td><input type="text" placeholder="Nota 01" id="nota01"></td>
+               </tr>
+               <tr>  
+                   <th>Nota 02</th>
+                   <td><input type="text" placeholder="Nota 02" id="nota02"></td>
+               </tr>
+             
+           </table>
+           <button onclick="media();">Calcular</button>
+           <div id="resultado"></div>
+        </div>
+        <script>
+            function media(){
+                var nome = document.getElementById("nome").value;
+                var nota1 = parseFloat(document.getElementById("nota01").value);
+                var nota2 = parseFloat(document.getElementById("nota02").value);
+                
+                var media = (nota1 + nota2) /2;
+
+                if (media >= 7)   {
+                    document.getElementById("resultado").innerHTML = "Olá " + nome + "... você está aprovado(a)!!!";
+                }       else if (media< 7 && media >=5) {
+                    document.getElementById("resultado").innerHTML = "Olá " + nome +"! Você está de recuperação (estude mais um pouco)";
+                }else {
+                   document.getElementById("resultado").innerHTML = "Olá " + nome + " você está reprovado(a)... =/";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    margin: 0 auto;
+    
+}
+
+.bloco {
+    width:600px;
+    margin:0 auto;
+}
+#titulo {
+    font-size:45px;
+    color: #848484;
+    text-align:center;
+    margin:10px 0;
+}
+
+
+table{
+    background-color:#848484;
+    margin:0 auto;
+    width:430px;
+    height:200px;
+}
+
+th, td{
+    background:#086A87;
+    font-size:25px;
+    
+}
+
+th {
+   width:50%;
+   text-align:left;
+   color:#fff;
+    
+}
+
+input {
+    height: 20px;
+    margin-left:25px;
+    color:#086A87;
+    font-weight: bold;
+}
+
+button {
+   border:none;
+   background-color:#848484;
+   font-size:20px;
+   padding:10px;
+   border-radius:15px;
+   color:yellow;
+    margin-top:20px;
+   display:block;
+   float: right;
+}
+
+#resultado {
+    font-size:30px;
+    color: #086A87;
+    font-weight: 700;
+    text-align: center;
+    margin-top:90px;
+}
