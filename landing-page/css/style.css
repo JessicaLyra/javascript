@@ -1,0 +1,209 @@
+html body {
+    margin:0 auto;
+    background-color:#000;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.cabecalho {
+    background-image: url('../img/fundo.jpg') no-repeat;
+    margin-top:100px ;
+    background-size:100%; 
+}
+
+.logo {
+    margin-top:100px  
+}
+
+nav  a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;  
+}
+
+nav a:hover {
+    color:#fff;
+}
+
+.coluna-texto h1 {
+    font-size:50px;
+    color:#ff6c00;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top:50px;
+}
+
+.coluna-texto p {
+    line-height: 1.8;
+    margin-bottom:150px;
+}
+
+button {
+    padding:10px;
+    background-color:#ff6c00;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.coluna-imagem img {
+    padding-left:150px;
+    padding-top:50px;
+}
+
+.bd-example-modal-xl {
+    width:100%;
+    background-color:#000;
+    opacity: 0.8;
+}
+
+section {
+    text-align:center;
+    margin-bottom:150px;
+    margin-top:150px;
+}
+
+.informations h1{
+    text-align:center;
+    color:#ff6c00;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+
+.informations p {
+    margin:0 auto;
+    padding-top:50px;
+    padding-bottom:150px;
+    width:700px;
+    text-align:justify;
+    font-size:25px;
+}
+
+form input {
+    padding:10px;
+    border:#ff6c00 2px solid;
+    color:#fff;
+    background-color:#000;
+}
+
+form button:hover {
+    color:#ff6c00;
+    background-color:#000;
+}
+
+footer {
+    border-top: #ff6c00 solid 2px;
+    color:#ff6c00;
+    padding-bottom:10px;
+    padding-top:10px;
+    text-align:center;
+}
+
+/*Medias Queries*/
+@media (max-width:480px) {
+    .cabecalho, .logo {
+        margin-top:20px;
+    }
+
+    .coluna-texto h1 {
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .coluna-texto p {
+        margin-bottom: 10px;
+        text-align:center; 
+        font-size:18px;
+    }
+
+    .coluna-imagem img {
+        padding-left:10px;
+    }
+
+    section {
+        margin-top:25px;
+    }
+    .informations p {
+        width:100%;
+        font-size:18px;
+    }
+
+    form input {
+        margin:20px;
+        font-size:20px;
+    }
+
+    form button {
+        float: right;
+    }
+}
+
+@media (min-width:481px) and (max-width: 767px) {
+    .cabecalho, .logo {
+        margin-top:20px;
+    }
+
+    .coluna-texto h1 {
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .coluna-texto p {
+        margin-bottom: 10px;
+        text-align:center; 
+        font-size:22px;
+        line-height: 1.8;
+    }
+
+    .coluna-imagem img {
+        padding-left:0;
+        margin:0 auto;
+        display:block;
+    }
+
+    section {
+        margin-top:25px;
+    }
+
+    .informations p {
+        width:100%;
+        font-size:22px;
+        line-height: 1.8;
+    }
+
+    form{
+        align-items: right;
+    }
+    form input {
+        margin:20px;
+        font-size:20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:900px) {
+    .coluna-texto p {
+        font-size:16px; 
+    }
+    
+    .coluna-imagem img {
+        padding-left:0;
+        display:block;  
+    }
+
+    section {
+        margin-top:25px;
+    }
+}
+
+@media (min-width:901px) and (max-width:1200px) {
+    .coluna-imagem img {
+        padding-left:0;
+        display:block;  
+        margin:0 auto;
+    }
+     
+    section {
+        margin-top:25px;
+    }
+}
