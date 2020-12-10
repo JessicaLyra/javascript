@@ -31,7 +31,7 @@ function verifica() {
 
     if (document.getElementById("whatsapp").value=="") {
         alert("Por favor coloque seu whatsapp")
-        document.formualario.whatsapp.focus();
+        document.formulario.whatsapp.focus();
         return false;
     }
 
